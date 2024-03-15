@@ -66,6 +66,22 @@
         "DefaultValueSource": "Property"
       }
     ],
+    "UiPath.Core.Activities.BeginProcess": [
+      {
+        "Type": "process",
+        "Values": {
+          "name": {
+            "Value": "ProcessName",
+            "ValueSource": "Property"
+          },
+          "folderPath": {
+            "Value": "FolderPath",
+            "ValueSource": "Property"
+          }
+        },
+        "DefaultValueSource": "Default"
+      }
+    ],
     "UiPath.Core.Activities.BulkAddQueueItems": [
       {
         "Type": "queue",
@@ -210,6 +226,22 @@
         },
         "SubBindings": [],
         "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.Core.Activities.GetTransactionItem": [
+      {
+        "Type": "queue",
+        "Values": {
+          "name": {
+            "Value": "QueueType",
+            "ValueSource": "Property"
+          },
+          "folderPath": {
+            "Value": "FolderPath",
+            "ValueSource": "Property"
+          }
+        },
+        "DefaultValueSource": "Default"
       }
     ],
     "UiPath.Core.Activities.InvokeProcess": [
@@ -579,34 +611,6 @@
           "name": {
             "Value": "QueueName",
             "ValueSource": "Property"
-          }
-        },
-        "SubBindings": [],
-        "DefaultValueSource": "Property"
-      }
-    ],
-    "UiPath.UIAutomationNext.Activities.NApplicationCard": [
-      {
-        "Type": "UIAConnection",
-        "PublishNullValues": false,
-        "Key": {
-          "Value": "ConnectionId",
-          "ValueSource": "Property"
-        },
-        "Values": {
-          "ConnectionId": {
-            "Value": "ConnectionId",
-            "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ConnectionName": {
-            "Value": "ConnectionName",
-            "ValueSource": "Property"
-          },
-          "Connector": {
-            "Value": "z-uipath-browser",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
